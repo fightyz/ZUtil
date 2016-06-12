@@ -29,6 +29,16 @@ public final class LogUtils {
     public static void v(Object object) { logger.v(SystemUtil.getStackTrace(), object); }
 
     /**
+     * debug的输出
+     * @param msg
+     * @param args
+     */
+    public static void d(String msg, Object... args) {
+        logger.d(SystemUtil.getStackTrace(), msg, args);
+    }
+    public static void d(Object object) { logger.d(SystemUtil.getStackTrace(), object); }
+
+    /**
      * info的输出
      * @param msg
      * @param args
